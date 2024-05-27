@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+
+// colors
+$clr-primary: hsl(47, 88%, 63%);
+
+$clr-white: hsl(0, 0%, 100%);
+$clr-grey: hsl(0, 0%, 50%);
+$clr-black: hsl(0, 0%, 7%);
+
+// typography
+$fs-body: clamp(0.875rem, calc(0.875rem + ((1vw - 0.32rem) * 0.142)), 1rem);
+$fs-heading: clamp(1.25rem, calc(1.25rem + ((1vw - 0.32rem) * 0.2841)), 1.5rem);
+$ff: "Figtree";
+
+// spacing
+$space-s: 0.75rem; // 12px
+$space-m: 1.5rem; // 24px
+
+// shadow
+
+// utilities
+$shadow: 10px 10px 0 0 rgba(0, 0, 0, 1);
+$shadow-hover: 15px 15px 0 0 rgba(0, 0, 0, 1);
+$radius-s: 0.625rem;
+$radius-m: 1.25rem;
+
+// reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+}
+
+body {
+  min-height: 100svh;
+  font-family: $ff;
+  background-color: $clr-primary;
+}
+
+p {
+  font-size: $fs-body;
+  letter-spacing: 0.3px;
+  line-height: 150%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.card {
+  position: relative;
+  background-color: $clr-white;
+  max-width: clamp(320px, calc(20rem + ((1vw - 3.2px) * 7.2727)), 384px);
+  padding: $space-m;
+  margin-inline: auto;
+  border-radius: $radius-m;
+  border: 1px solid black;
+  box-shadow: $shadow;
+  transition: all ease-in-out 0.1s;
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    box-shadow: $shadow-hover;
+  }
+
+  &:focus-within {
+    :focus {
+      outline: none;
+    }
+
+    .card__link {
+      color: $clr-primary;
+    }
+  }
+
+  &__image-wrapper {
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: $radius-s;
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-block: 20px;
+    gap: 12px;
+  }
+
+  &__category {
+    background-color: $clr-primary;
+    width: max-content;
+    padding: 6px 12px;
+    border-radius: 0.2em;
+    font-size: 14px;
+    // line-height: 1;
+    font-weight: 700;
+  }
+
+  &__date {
+    font-size: $fs-body;
+    letter-spacing: -0.55px;
+    line-height: 150%;
+  }
+
+  &__link {
+    color: $clr-black;
+    text-decoration: none;
+    transition: all ease-in-out 0.1s;
+
+    &:hover {
+      color: $clr-primary;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+  }
+
+  &__heading {
+    font-size: $fs-heading;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 150%;
+    min-height: 0vw;
+  }
+
+  &__body {
+    color: $clr-grey;
+
+    p {
+      line-height: 150%;
+    }
+  }
+
+  &__avatar {
+    margin-top: $space-m;
+    display: flex;
+    align-items: center;
+    gap: $space-s;
+    font-weight: 700;
+
+    p {
+      font-size: 14px;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: $space-m;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: $space-s;
+}
