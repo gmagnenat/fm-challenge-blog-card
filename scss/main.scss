@@ -43,34 +43,26 @@ $radius-m: 1.25rem;
   font: inherit;
 }
 
-html {
-}
-
 body {
   min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: $ff;
   background-color: $clr-primary;
 }
 
 p {
   font-size: $fs-body;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.0019em;
   line-height: 150%;
-}
-
-#main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  min-height: 100vh;
 }
 
 .card {
   position: relative;
   background-color: $clr-white;
-  max-width: clamp(320px, calc(20rem + ((1vw - 3.2px) * 7.2727)), 384px);
+  max-width: clamp(20rem, calc(20rem + ((1vw - 0.2rem) * 7.2727)), 24rem);
   padding: $space-m;
   margin-inline: auto;
   border-radius: $radius-m;
@@ -97,7 +89,7 @@ p {
   &__image-wrapper {
     img {
       width: 100%;
-      height: 200px;
+      height: 12.5rem;
       object-fit: cover;
       border-radius: $radius-s;
     }
@@ -106,23 +98,23 @@ p {
   &__content-wrapper {
     display: flex;
     flex-direction: column;
-    margin-block: 20px;
-    gap: 12px;
+    margin-block: 1.25rem;
+    gap: 0.75rem;
   }
 
   &__category {
     background-color: $clr-primary;
     width: max-content;
-    padding: 6px 12px;
+    padding: 0.3125rem 0.75rem;
     border-radius: 0.2em;
-    font-size: 14px;
+    font-size: 0.875rem;
     // line-height: 1;
     font-weight: 700;
   }
 
   &__date {
     font-size: $fs-body;
-    letter-spacing: -0.55px;
+    letter-spacing: -0.034em;
     line-height: 150%;
   }
 
@@ -146,7 +138,7 @@ p {
   &__heading {
     font-size: $fs-heading;
     font-weight: 700;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.04em;
     line-height: 150%;
     min-height: 0vw;
   }
@@ -167,12 +159,12 @@ p {
     font-weight: 700;
 
     p {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     img {
-      width: 32px;
-      height: 32px;
+      width: 2rem;
+      height: 2rem;
     }
   }
 }
@@ -185,7 +177,7 @@ footer {
   justify-content: center;
   gap: $space-s;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 48em) {
     flex-direction: row;
   }
 }
