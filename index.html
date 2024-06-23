@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | Blog preview card</title>
 
     <link
       rel="icon"
@@ -12,8 +13,6 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Blog preview card</title>
-
     <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
@@ -21,27 +20,33 @@
       <div class="card">
         <div class="card__image-wrapper">
           <img
+            class="card__image"
             src="./assets/images/illustration-article.svg"
             alt="Yellow and black graphical abstract pattern"
           />
         </div>
         <div class="card__content-wrapper">
           <span class="card__category"> Learning </span>
-          <p class="card__date">Published 21 Dec 2023</p>
+          <time datetime="2023-12-21" class="card__date"
+            >Published 21 Dec 2023</time
+          >
           <h3 class="card__heading">
-            <a href="#" class="card__link">HTML & CSS foundations</a>
+            <a href="https://frontendmentor.io" class="card__link"
+              >HTML & CSS foundations</a
+            >
           </h3>
           <p class="card__body">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
         </div>
-        <div class="card__avatar">
+        <div class="card__author">
           <img
+            class="card__author-image"
             src="./assets/images/image-avatar.webp"
             alt="Greg Hooper portrait"
           />
-          <p>Greg Hooper</p>
+          <p class="card__author-fullname">Greg Hooper</p>
         </div>
       </div>
     </main>
