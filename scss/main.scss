@@ -1,97 +1,12 @@
+@use "variables" as *;
+@use "reset" as *;
+
 @font-face {
   font-family: "Figtree";
   src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
   font-weight: 125 950;
   font-stretch: 75% 125%;
   font-style: normal;
-}
-
-// colors
-$clr-primary: hsl(47, 88%, 63%);
-
-$clr-white: hsl(0, 0%, 100%);
-$clr-grey: hsl(0, 0%, 50%);
-$clr-black: hsl(0, 0%, 7%);
-
-// typography
-$fs-body: clamp(0.875rem, calc(0.875rem + ((1vw - 0.32rem) * 0.142)), 1rem);
-$fs-heading: clamp(1.25rem, calc(1.25rem + ((1vw - 0.32rem) * 0.2841)), 1.5rem);
-$ff: "Figtree";
-
-// spacing
-$space-s: 0.75rem; // 12px
-$space-m: 1.5rem; // 24px
-
-// shadow
-
-// utilities
-$shadow: 10px 10px 0 0 rgba(0, 0, 0, 1);
-$shadow-hover: 15px 15px 0 0 rgba(0, 0, 0, 1);
-$radius-s: 0.625rem;
-$radius-m: 1.25rem;
-
-// reset
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-/*
-  2. Remove default margin
-*/
-* {
-  margin: 0;
-}
-/*
-  Typographic tweaks!
-  3. Add accessible line-height
-  4. Improve text rendering
-*/
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-/*
-  5. Improve media defaults
-*/
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-/*
-  6. Remove built-in form typography styles
-*/
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-/*
-  7. Avoid text overflows
-*/
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-/*
-  8. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
 }
 
 body {
