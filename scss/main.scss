@@ -11,6 +11,7 @@
 
 body {
   min-height: 100svh;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +24,7 @@ body {
 p {
   font-size: $fs-body;
   letter-spacing: 0.0019em;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .card {
@@ -80,7 +81,7 @@ p {
 .card__date {
   font-size: $fs-body;
   letter-spacing: -0.034em;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .card__link {
@@ -104,13 +105,13 @@ p {
   font-size: $fs-heading;
   font-weight: 700;
   letter-spacing: 0.04em;
-  line-height: 150%;
+  line-height: 1.5;
   min-height: 0vw;
 }
 
 .card__body {
   color: $clr-grey;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .card__author {
