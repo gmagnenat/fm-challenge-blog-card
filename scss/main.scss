@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: $ff;
+  line-height: 1.5;
   background-color: $clr-primary;
 }
 
@@ -24,7 +25,6 @@ body {
 p {
   font-size: $fs-body;
   letter-spacing: 0.0019em;
-  line-height: 1.5;
 }
 
 .card {
@@ -74,14 +74,12 @@ p {
   padding: 0.3125rem 0.75rem;
   border-radius: 0.2em;
   font-size: 0.875rem;
-  // line-height: 1;
   font-weight: 700;
 }
 
 .card__date {
   font-size: $fs-body;
   letter-spacing: -0.034em;
-  line-height: 1.5;
 }
 
 .card__link {
@@ -105,13 +103,11 @@ p {
   font-size: $fs-heading;
   font-weight: 700;
   letter-spacing: 0.04em;
-  line-height: 1.5;
   min-height: 0vw;
 }
 
 .card__body {
   color: $clr-grey;
-  line-height: 1.5;
 }
 
 .card__author {
