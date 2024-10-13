@@ -3,38 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <title>Frontend Mentor | Blog preview card</title>
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <style>
+      @font-face {
+        font-family: "Figtree";
+        src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+        font-weight: 125 950;
+        font-stretch: 75% 125%;
+        font-style: normal;
+      }
+    </style>
 
     <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
-    <main id="main">
+    <main>
       <div class="card">
         <div class="card__image-wrapper">
           <img
             class="card__image"
             src="./assets/images/illustration-article.svg"
-            alt="Yellow and black graphical abstract pattern"
+            alt="black and white abstract shape on a yellow background"
           />
         </div>
         <div class="card__content-wrapper">
-          <span class="card__category"> Learning </span>
+          <span class="card__category">Learning</span>
           <time datetime="2023-12-21" class="card__date"
             >Published 21 Dec 2023</time
           >
-          <h3 class="card__heading">
+          <h2 class="card__heading">
             <a href="https://frontendmentor.io" class="card__link"
               >HTML & CSS foundations</a
             >
-          </h3>
+          </h2>
           <p class="card__body">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
@@ -44,7 +51,7 @@
           <img
             class="card__author-image"
             src="./assets/images/image-avatar.webp"
-            alt="Greg Hooper portrait"
+            alt=""
           />
           <p class="card__author-fullname">Greg Hooper</p>
         </div>
