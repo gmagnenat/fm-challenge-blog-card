@@ -1,21 +1,15 @@
 @use "variables" as *;
 @use "reset" as *;
 
-@font-face {
-  font-family: "Figtree";
-  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
-  font-weight: 125 950;
-  font-stretch: 75% 125%;
-  font-style: normal;
-}
-
 body {
   min-height: 100svh;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: $ff;
+  line-height: 1.5;
   background-color: $clr-primary;
 }
 
@@ -23,7 +17,6 @@ body {
 p {
   font-size: $fs-body;
   letter-spacing: 0.0019em;
-  line-height: 150%;
 }
 
 .card {
@@ -73,14 +66,12 @@ p {
   padding: 0.3125rem 0.75rem;
   border-radius: 0.2em;
   font-size: 0.875rem;
-  // line-height: 1;
   font-weight: 700;
 }
 
 .card__date {
   font-size: $fs-body;
   letter-spacing: -0.034em;
-  line-height: 150%;
 }
 
 .card__link {
@@ -104,13 +95,11 @@ p {
   font-size: $fs-heading;
   font-weight: 700;
   letter-spacing: 0.04em;
-  line-height: 150%;
   min-height: 0vw;
 }
 
 .card__body {
   color: $clr-grey;
-  line-height: 150%;
 }
 
 .card__author {
